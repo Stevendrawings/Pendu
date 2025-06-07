@@ -30,7 +30,7 @@ function guess(partyGuess){
     } 
 
         let reponseGuess = Array.from(stockGuess); 
-        console.log(reponseGuess); // ['m', 'o', 'm', 'o'] 
+        console.log(reponseGuess); // ['v', 'o', 'i', 't', 'u', 'r', 'e'] 
 }
 
  guess()
