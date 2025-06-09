@@ -19,7 +19,10 @@ function guess(partyGuess){
 
     for(let j = 0; j < stockGuess.length; j = j + 1){
         enunciateGuess = prompt("Taper les lettres pour deviner le mot du pendu !")
-        tabs.push("") // ['', '', '', '']
+        tabs = Array(stockGuess.length).fill("") // ['', '', '', '', '', '', '', '']
+        // []['e', 'e', 'e'][]['e'][][]
+        // Il est preferable d'utiliser la methode fill plutot que d'utiliser
+        // tabs.push('') vos mieux priorisé des données comme sur le code ci-dessus
         if (searchGuess(stockGuess, enunciateGuess) !== -1) {
             tabs.splice(j, 1, enunciateGuess)
         } else if(searchGuess(stockGuess, enunciateGuess) > -1){
@@ -30,7 +33,6 @@ function guess(partyGuess){
         }
 
         console.log(tablo)
-
         let reponseGuess = Array.from(stockGuess); 
         console.log(reponseGuess); // ['v', 'o', 'i', 't', 'u', 'r', 'e'] 
 }
