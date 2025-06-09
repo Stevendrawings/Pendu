@@ -31,7 +31,7 @@ function guess(partyGuess){
     console.log(tablo)
 
         let reponseGuess = Array.from(stockGuess); 
-        console.log(reponseGuess); // ['m', 'o', 'm', 'o'] 
+        console.log(reponseGuess); 
 }
 
  guess()
